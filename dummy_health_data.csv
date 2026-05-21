@@ -1,51 +1,51 @@
 User ID,Age,Gender,Lifestyle,Sleep Hours,Stress Level,Activity Level,Water Intake (L),Digestion Score,Energy Score,Wellness Goals,Wellness Score
-USER_001,58,Male,Student,5.4,2.2,7.4,3.0,8.9,0.9,Energy,81.0
-USER_002,45,Male,Student,5.1,5.1,0.3,1.6,6.5,5.4,Stress,47.0
-USER_003,32,Female,Founder,7.8,1.6,4.2,1.8,2.2,7.6,Stress,78.0
-USER_004,24,Male,Homemaker,5.8,3.4,2.6,1.1,4.6,1.2,Stress,56.0
-USER_005,42,Male,Founder,7.1,8.6,5.8,3.1,0.5,2.3,Energy,63.0
-USER_006,36,Male,Working Professional,5.9,4.5,8.3,1.5,3.6,6.7,Stress,67.0
-USER_007,62,Other,Student,7.2,5.3,2.4,2.4,2.7,9.3,Detox,63.0
-USER_008,62,Other,Working Professional,5.6,7.7,0.6,3.5,8.1,4.0,Energy,50.0
-USER_009,22,Male,Founder,7.3,4.0,9.1,2.4,2.6,2.5,Sleep,82.0
-USER_010,53,Other,Founder,6.9,9.0,4.0,1.7,10.0,5.1,Energy,49.0
-USER_011,23,Male,Student,7.1,7.9,4.2,1.2,3.8,10.0,Sleep,50.0
-USER_012,51,Female,Student,7.6,6.8,5.4,1.8,6.4,1.1,Energy,62.0
-USER_013,45,Male,Homemaker,8.8,8.8,2.6,2.5,1.8,9.1,Stress,56.0
-USER_014,58,Female,Working Professional,5.9,1.6,9.5,3.8,9.2,6.0,Sleep,89.0
-USER_015,49,Male,Student,8.4,8.3,3.1,1.2,8.8,9.5,Digestion,50.0
-USER_016,23,Other,Homemaker,8.9,5.3,1.3,3.0,9.5,1.7,Stress,68.0
-USER_017,51,Other,Homemaker,8.6,7.6,6.9,3.1,4.0,6.7,Sleep,72.0
-USER_018,41,Female,Homemaker,5.2,0.6,0.2,2.7,5.9,0.1,Stress,69.0
-USER_019,63,Other,Student,4.3,0.3,3.3,2.5,2.8,4.9,Sleep,72.0
-USER_020,52,Male,Homemaker,7.9,8.1,1.9,1.3,4.3,4.2,Sleep,48.0
-USER_021,47,Other,Student,7.3,6.5,0.6,3.2,8.0,1.1,Energy,60.0
+USER_001,58,Male,Student,5.4,2.2,7.4,3.0,8.9,0.9,Energy,75.0
+USER_002,45,Male,Student,5.1,5.1,0.3,1.6,6.5,5.4,Stress,50.0
+USER_003,32,Female,Founder,7.8,1.6,4.2,1.8,2.2,7.6,Stress,71.0
+USER_004,24,Male,Homemaker,5.8,3.4,2.6,1.1,4.6,1.2,Stress,50.0
+USER_005,42,Male,Founder,7.1,8.6,5.8,3.1,0.5,2.3,Energy,57.0
+USER_006,36,Male,Working Professional,5.9,4.5,8.3,1.5,3.6,6.7,Stress,63.0
+USER_007,62,Other,Student,7.2,5.3,2.4,2.4,2.7,9.3,Detox,65.0
+USER_008,62,Other,Working Professional,5.6,7.7,0.6,3.5,8.1,4.0,Energy,56.0
+USER_009,22,Male,Founder,7.3,4.0,9.1,2.4,2.6,2.5,Sleep,71.0
+USER_010,53,Other,Founder,6.9,9.0,4.0,1.7,10.0,5.1,Energy,56.0
+USER_011,23,Male,Student,7.1,7.9,4.2,1.2,3.8,10.0,Sleep,55.0
+USER_012,51,Female,Student,7.6,6.8,5.4,1.8,6.4,1.1,Energy,58.0
+USER_013,45,Male,Homemaker,8.8,8.8,2.6,2.5,1.8,9.1,Stress,59.0
+USER_014,58,Female,Working Professional,5.9,1.6,9.5,3.8,9.2,6.0,Sleep,87.0
+USER_015,49,Male,Student,8.4,8.3,3.1,1.2,8.8,9.5,Digestion,60.0
+USER_016,23,Other,Homemaker,8.9,5.3,1.3,3.0,9.5,1.7,Stress,69.0
+USER_017,51,Other,Homemaker,8.6,7.6,6.9,3.1,4.0,6.7,Sleep,71.0
+USER_018,41,Female,Homemaker,5.2,0.6,0.2,2.7,5.9,0.1,Stress,61.0
+USER_019,63,Other,Student,4.3,0.3,3.3,2.5,2.8,4.9,Sleep,63.0
+USER_020,52,Male,Homemaker,7.9,8.1,1.9,1.3,4.3,4.2,Sleep,49.0
+USER_021,47,Other,Student,7.3,6.5,0.6,3.2,8.0,1.1,Energy,61.0
 USER_022,30,Male,Homemaker,6.1,2.8,2.5,3.8,4.4,8.6,Sleep,72.0
-USER_023,53,Male,Student,9.0,8.4,9.7,3.8,8.5,1.7,Energy,75.0
-USER_024,49,Female,Working Professional,8.5,1.6,0.0,2.2,9.3,7.9,Weight,73.0
-USER_025,36,Female,Homemaker,4.9,2.2,0.6,3.2,0.6,3.1,Sleep,66.0
-USER_026,21,Other,Homemaker,8.6,5.3,0.6,2.5,8.5,0.7,Detox,64.0
-USER_027,22,Other,Working Professional,4.6,8.9,2.5,2.8,6.2,4.2,Weight,45.0
-USER_028,55,Other,Founder,5.0,7.2,2.4,2.2,6.7,3.0,Digestion,48.0
-USER_029,38,Male,Student,7.1,5.6,1.0,2.6,5.1,1.3,Weight,61.0
-USER_030,40,Male,Working Professional,5.4,4.4,5.4,1.9,9.8,8.1,Digestion,62.0
-USER_031,51,Male,Founder,4.5,8.8,2.6,3.7,7.4,1.6,Energy,46.0
-USER_032,36,Other,Working Professional,5.7,6.9,8.5,2.5,2.5,9.1,Energy,65.0
-USER_033,21,Male,Homemaker,4.2,3.3,1.3,3.9,1.6,4.4,Digestion,61.0
-USER_034,63,Female,Student,4.4,8.8,9.0,2.6,8.3,5.8,Stress,56.0
-USER_035,27,Female,Working Professional,5.5,9.0,8.0,3.6,9.0,2.1,Stress,60.0
-USER_036,33,Other,Student,7.9,8.8,4.1,2.9,1.5,9.3,Digestion,61.0
-USER_037,28,Male,Homemaker,4.9,9.2,7.8,2.2,6.7,7.4,Stress,51.0
-USER_038,33,Female,Working Professional,4.5,8.7,8.6,1.7,8.2,4.6,Energy,50.0
-USER_039,37,Male,Working Professional,7.3,4.0,2.8,1.2,7.7,3.5,Stress,61.0
+USER_023,53,Male,Student,9.0,8.4,9.7,3.8,8.5,1.7,Energy,73.0
+USER_024,49,Female,Working Professional,8.5,1.6,0.0,2.2,9.3,7.9,Weight,76.0
+USER_025,36,Female,Homemaker,4.9,2.2,0.6,3.2,0.6,3.1,Sleep,57.0
+USER_026,21,Other,Homemaker,8.6,5.3,0.6,2.5,8.5,0.7,Detox,62.0
+USER_027,22,Other,Working Professional,4.6,8.9,2.5,2.8,6.2,4.2,Weight,50.0
+USER_028,55,Other,Founder,5.0,7.2,2.4,2.2,6.7,3.0,Digestion,50.0
+USER_029,38,Male,Student,7.1,5.6,1.0,2.6,5.1,1.3,Weight,57.0
+USER_030,40,Male,Working Professional,5.4,4.4,5.4,1.9,9.8,8.1,Digestion,68.0
+USER_031,51,Male,Founder,4.5,8.8,2.6,3.7,7.4,1.6,Energy,50.0
+USER_032,36,Other,Working Professional,5.7,6.9,8.5,2.5,2.5,9.1,Energy,66.0
+USER_033,21,Male,Homemaker,4.2,3.3,1.3,3.9,1.6,4.4,Digestion,56.0
+USER_034,63,Female,Student,4.4,8.8,9.0,2.6,8.3,5.8,Stress,61.0
+USER_035,27,Female,Working Professional,5.5,9.0,8.0,3.6,9.0,2.1,Stress,63.0
+USER_036,33,Other,Student,7.9,8.8,4.1,2.9,1.5,9.3,Digestion,64.0
+USER_037,28,Male,Homemaker,4.9,9.2,7.8,2.2,6.7,7.4,Stress,58.0
+USER_038,33,Female,Working Professional,4.5,8.7,8.6,1.7,8.2,4.6,Energy,54.0
+USER_039,37,Male,Working Professional,7.3,4.0,2.8,1.2,7.7,3.5,Stress,60.0
 USER_040,50,Female,Founder,4.6,9.7,1.8,3.9,2.7,1.1,Stress,42.0
-USER_041,45,Female,Founder,7.0,5.1,3.9,2.7,2.5,7.1,Weight,68.0
-USER_042,18,Other,Working Professional,6.2,9.5,9.2,2.9,6.6,1.2,Digestion,63.0
-USER_043,37,Other,Founder,6.0,4.0,3.0,1.4,4.2,9.4,Energy,58.0
-USER_044,61,Other,Working Professional,6.8,4.1,8.3,1.9,2.1,7.9,Detox,74.0
-USER_045,56,Other,Founder,6.2,6.8,5.1,3.4,9.6,7.4,Weight,64.0
-USER_046,60,Male,Founder,7.3,6.2,0.9,3.9,2.3,3.1,Detox,62.0
-USER_047,30,Male,Student,5.2,4.8,8.5,1.2,4.1,6.3,Stress,62.0
+USER_041,45,Female,Founder,7.0,5.1,3.9,2.7,2.5,7.1,Weight,66.0
+USER_042,18,Other,Working Professional,6.2,9.5,9.2,2.9,6.6,1.2,Digestion,61.0
+USER_043,37,Other,Founder,6.0,4.0,3.0,1.4,4.2,9.4,Energy,60.0
+USER_044,61,Other,Working Professional,6.8,4.1,8.3,1.9,2.1,7.9,Detox,69.0
+USER_045,56,Other,Founder,6.2,6.8,5.1,3.4,9.6,7.4,Weight,71.0
+USER_046,60,Male,Founder,7.3,6.2,0.9,3.9,2.3,3.1,Detox,58.0
+USER_047,30,Male,Student,5.2,4.8,8.5,1.2,4.1,6.3,Stress,59.0
 USER_048,30,Other,Homemaker,6.0,1.5,6.9,3.7,8.6,8.9,Weight,85.0
-USER_049,45,Male,Working Professional,6.6,0.5,2.5,3.5,4.6,8.0,Energy,81.0
-USER_050,60,Other,Founder,7.1,7.2,5.0,3.5,5.5,9.0,Weight,66.0
+USER_049,45,Male,Working Professional,6.6,0.5,2.5,3.5,4.6,8.0,Energy,77.0
+USER_050,60,Other,Founder,7.1,7.2,5.0,3.5,5.5,9.0,Weight,70.0

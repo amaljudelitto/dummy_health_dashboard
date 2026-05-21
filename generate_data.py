@@ -52,13 +52,15 @@ data = {
 
 # Turning into a DataFrame
 df = pd.DataFrame(data)
-sleep_score = (df['Sleep Hours'] / 8.0).clip(upper=1.0) * 30  
-stress_score = ((10 - df['Stress Level']) / 9.0) * 30       
-activity_score = (df['Activity Level'] / 10.0) * 20          
+sleep_score = (df['Sleep Hours'] / 8.0).clip(upper=1.0) * 25  
+stress_score = ((10 - df['Stress Level']) / 9.0).clip(upper=1.0) * 20      
+activity_score = (df['Activity Level'] / 10.0) * 15          
 water_score = (df['Water Intake (L)'] / 3.0).clip(upper=1.0) * 20 
+digestion_score = (df['Digestion Score'] / 10.0) * 10
+energy_score = (df['Energy Score']/ 10.0) * 10
 
 # Summing up and rounding to a clean whole number
-df['Wellness Score'] = round(sleep_score + stress_score + activity_score + water_score)
+df['Wellness Score'] = round(sleep_score + stress_score + activity_score + water_score + digestion_score + energy_score)
 
 df.to_csv("dummy_health_data.csv", index=False)
 print("Data generated and Wellness Scores calculated successfully!")
