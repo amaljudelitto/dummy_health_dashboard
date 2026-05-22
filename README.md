@@ -2,7 +2,7 @@
 
 A dynamic, interactive dashboard built to visualize user wellness metrics, identify lifestyle trends, and generate personalized health insights using Google's Gemini 2.0 AI.
 
-👉 **[Click Here to View the Live Dashboard](YOUR_STREAMLIT_CLOUD_LINK_HERE)**
+👉 **[Click Here to View the Live Dashboard](https://ayurgenxdashboard-wmstgf8esjnnd6ndxhn2ua.streamlit.app/)**
 
 ---
 
