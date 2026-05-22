@@ -46,7 +46,8 @@ venv\Scripts\activate
 pip install -r requirements.txt
 
 # Creating dummy data
-run generate_data.py after changing the name for the csv file which will be generated to create a new set of dummy data or feel free to use the csv file which is already generated.
+run generate_data.py after changing the name for the csv file which will be generated to
+create a new set of dummy data or feel free to use the csv file which is already generated.
 
 # Running the Streamlit app
 run app.py to create a new streamlit app with the newly generated dummy data.
