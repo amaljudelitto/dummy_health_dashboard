@@ -2,14 +2,14 @@ import pandas as pd
 import numpy as np
 import random
 
-# 1. Set the seed so your random numbers stay consistent every time you run it
+# 1. Set the seed the random numbers stay consistent every time its run
 np.random.seed(42)
 random.seed(42)
 
-# 2. Define the size of the dataset
+# 2. Defining the size of the dataset
 num_users = 50
 
-# 3. Create lists to hold your columns
+# 3. Create lists to hold columns
 user_ids = [f"USER_{str(i).zfill(3)}" for i in range(1, num_users + 1)]
 ages = []
 genders = []
@@ -24,7 +24,6 @@ wellness_goals = []
 
 # 4. Loop 50 times to generate realistic human data
 for i in range(num_users):
-    # Use standard python random/numpy functions to fill out the attributes
     ages.append(random.randint(18, 65))
     genders.append(random.choice(['Male', 'Female', 'Other']))
     lifestyles.append(random.choice(['Student', 'Working Professional', 'Founder', 'Homemaker']))
