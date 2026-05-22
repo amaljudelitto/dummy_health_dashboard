@@ -50,5 +50,6 @@ run generate_data.py after changing the name for the csv file which will be gene
 create a new set of dummy data or feel free to use the csv file which is already generated.
 
 # Running the Streamlit app
-run app.py to create a new streamlit app with the newly generated dummy data.
+run app.py after changing the name of the csv file which will be loaded to match the newly
+created csv file to create a new streamlit app with the newly generated dummy data.
 
