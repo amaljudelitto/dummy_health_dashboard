@@ -2,10 +2,9 @@ import os
 from google import genai
 from dotenv import load_dotenv
 
-# 1. Load the secure API key
+# Load the secure API key
 load_dotenv()
 
-# The new client automatically looks for the GEMINI_API_KEY environment variable
 client = genai.Client()
 
 def get_ai_wellness_insights(user_row):
@@ -30,7 +29,6 @@ def get_ai_wellness_insights(user_row):
     """
 
     try:
-        # 2. Use the new syntax to call the model
         response = client.models.generate_content(
             model='gemini-2.0-flash',
             contents=user_context,
