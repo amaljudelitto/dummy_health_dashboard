@@ -52,6 +52,7 @@ data = {
 
 # Turning into a DataFrame
 df = pd.DataFrame(data)
+# Dummy scoring logic
 sleep_score = (df['Sleep Hours'] / 8.0).clip(upper=1.0) * 25  
 stress_score = ((10 - df['Stress Level']) / 9.0).clip(upper=1.0) * 20      
 activity_score = (df['Activity Level'] / 10.0) * 15          

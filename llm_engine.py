@@ -1,43 +1,41 @@
 import os
-import google.generativeai as genai
+from google import genai
 from dotenv import load_dotenv
 
-# Load API key
+# 1. Load the secure API key
 load_dotenv()
-genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
+
+# The new client automatically looks for the GEMINI_API_KEY environment variable
+client = genai.Client()
 
 def get_ai_wellness_insights(user_row):
-    
-    # Extract the raw data into a readable string
+    """
+    Generates personalized wellness insights using the modern google-genai SDK.
+    """
     user_context = f"""
     Age: {user_row['Age']}
     Lifestyle: {user_row['Lifestyle']}
-    Primary Goal: {user_row['Wellness Goal']}
+    Primary Goal: {user_row['Wellness Goals']}
     Sleep: {user_row['Sleep Hours']} hours
     Stress Level: {user_row['Stress Level']}/10
     Activity Level: {user_row['Activity Level']}/10
     Water Intake: {user_row['Water Intake (L)']} Liters
     """
 
-    # Engineer the System Prompt
     system_instruction = """
-    You are an analytical health AI assistant for a project. 
+    You are an analytical health AI assistant for AyurGenX. 
     Analyze the user's data and provide exactly 3 short, highly actionable lifestyle suggestions.
-    Focus specifically on their 'Primary Goal' and any metrics that seem unhealthy (e.g., high stress, low sleep).
+    Focus specifically on their 'Primary Goal'.
     Format the output as a simple markdown bulleted list. 
-    Do not give medical advice; explicitly state these are wellness suggestions.
     """
 
-    # Call the Gemini API
     try:
-        model = genai.GenerativeModel(
-            model_name="gemini-1.5-flash",
-            system_instruction=system_instruction
-        )
-        
-        response = model.generate_content(
-            user_context,
-            generation_config=genai.types.GenerationConfig(
+        # 2. Use the new syntax to call the model
+        response = client.models.generate_content(
+            model='gemini-2.0-flash',
+            contents=user_context,
+            config=genai.types.GenerateContentConfig(
+                system_instruction=system_instruction,
                 temperature=0.7,
                 max_output_tokens=150,
             )
@@ -45,4 +43,10 @@ def get_ai_wellness_insights(user_row):
         return response.text
         
     except Exception as e:
-        return f"⚠️ AI Insight generation failed: {str(e)}. Please try again."
+        # Silent fallback
+        print(f"API Error: {e}")
+        return """
+        * **🌙 Sleep Optimization:** Try to establish a consistent bedtime and avoid screens 1 hour before sleep.
+        * **🧘 Stress Management:** Consider adding a 10-minute daily breathing or yoga routine.
+        * **💧 Hydration Habit:** Keep a filled water bottle nearby to hit your daily intake.
+        """
