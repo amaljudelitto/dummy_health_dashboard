@@ -35,7 +35,7 @@ Open your terminal and run the following commands:
 
 ```bash
 # Clone the repository
-git clone [https://github.com/YOUR_USERNAME/ayurgenx_dashboard.git](https://github.com/YOUR_USERNAME/ayurgenx_dashboard.git)
+git clone [https://github.com/amaljudelitto/dummy_health_dashboard.git](https://github.com/amaljudelitto/dummy_health_dashboard.git)
 cd ayurgenx_dashboard
 
 # Create and activate a virtual environment (Windows)
