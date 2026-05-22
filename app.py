@@ -27,7 +27,6 @@ view_mode = st.sidebar.radio("Select View:", ["Global Overview", "Individual Use
 if view_mode == "Global Overview":
     st.title("Global Health Analytics")
     st.markdown("Overview of all 50 dummy users.")
-    # 1. Average Wellness Score & Top 3 Concerns (Top Row)
     col1, col2 = st.columns([1, 2])
     
     with col1:
@@ -40,13 +39,13 @@ if view_mode == "Global Overview":
             st.write(f"**{i+1}. {concern}** ({count} users)")
 
     with col2:
-        # 2. User Segmentation by Lifestyle
+        # User Segmentation by Lifestyle
         fig_segmentation = px.pie(df, names='Lifestyle', title="User Segmentation by Lifestyle", hole=0.4)
         st.plotly_chart(fig_segmentation, width="stretch")
 
-    st.divider() # Adds a clean horizontal line
+    st.divider()
 
-    # 3. Stress & Activity Distributions (Middle Row)
+    # Stress & Activity Distributions (Middle Row)
     col3, col4 = st.columns(2)
     
     with col3:
@@ -59,7 +58,7 @@ if view_mode == "Global Overview":
         fig_activity = px.box(df, x="Lifestyle", y="Activity Level", title="Activity Summary by Lifestyle", color="Lifestyle")
         st.plotly_chart(fig_activity, width="stretch")
 
-    # 4. Sleep Trend (Bottom Row)
+    # Sleep Trend (Bottom Row)
     # Since we don't have time-series dates, we show the trend across age groups
     df_sorted_age = df.sort_values(by="Age")
     fig_sleep = px.line(df_sorted_age, x="Age", y="Sleep Hours", color="Lifestyle", markers=True, title="Sleep Trend Across Ages")
@@ -72,7 +71,7 @@ elif view_mode == "Individual User Report":
     selected_user = st.selectbox("Select a User ID:", df['User ID'].unique())
     user_data = df[df['User ID'] == selected_user].iloc[0]
     
-    # 1. Display User Info & Wellness Score
+    # Display User Info & Wellness Score
     col1, col2 = st.columns(2)
     with col1:
         st.write(f"**Age:** {user_data['Age']} | **Gender:** {user_data['Gender']}")
@@ -83,7 +82,7 @@ elif view_mode == "Individual User Report":
         
     st.divider()
     
-    # 2. Logic to determine Strong & Risk Areas
+    # Logic to determine Strong & Risk Areas
     strong_areas = []
     risk_areas = []
     
@@ -103,7 +102,7 @@ elif view_mode == "Individual User Report":
     if not strong_areas: strong_areas.append("Building Baseline Habits")
     if not risk_areas: risk_areas.append("No immediate risk areas detected")
 
-    # 3. Display Strong and Risk Areas
+    # Display Strong and Risk Areas
     col3, col4 = st.columns(2)
     with col3:
         st.subheader("Strong Areas")
@@ -117,7 +116,7 @@ elif view_mode == "Individual User Report":
             
     st.divider()
     
-    # 4. AI Insights (Your existing Gemini code)
+    # AI Insights (Your existing Gemini code)
     st.subheader("AI Insights")
     
     if st.button("Generate AI Recommendations"):
